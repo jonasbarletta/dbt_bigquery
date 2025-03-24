@@ -1,0 +1,22 @@
+[project]
+name = "dbt_gcp"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jonas Barletta",email = "jonasbarletta@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-core (>=1.9.3,<2.0.0)",
+    "dbt-bigquery (>=1.9.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+sqlfluff = "^3.3.1"
